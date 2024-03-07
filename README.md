@@ -1,9 +1,10 @@
 Follow the below steps to deploy a Kubernetes CLuster with a master and 3 data nodes on Ubuntu 20.04
 
+DEPLOYMENT STEPS
+
 ON MASTER NODE
 _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
-DEPLOYMENT STEPS:
   I. Docker part:
 
     l. Set up Docker's apt repository (https://docs.docker.com/engine/install/ubuntu/):
@@ -31,7 +32,7 @@ ________________________________________________________________________________
 ON DATA NODES
 _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
 
-DEPLOYMENT STEPS:
+
   I. Docker part:
 
     l. Set up Docker's apt repository (https://docs.docker.com/engine/install/ubuntu/):

@@ -1,4 +1,4 @@
-Follow the below steps to deploy a Kubernetes CLuster with a master and 3 data nodes on Ubuntu 20.04
+Follow the below steps to deploy a Kubernetes 1.28.1 Cluster with a master and 3 data nodes on Ubuntu 20.04
 
    ON MASTER NODE
 _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________

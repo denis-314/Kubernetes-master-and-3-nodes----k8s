@@ -68,10 +68,10 @@ ________________________________________________________________________________
     
     5. Initialize Kubernetes on Master Node
 
-    kubeadm init --apiserver-advertise-address=10.40.0.124 --pod-network-cidr=10.244.0.0/16 --cri-socket=unix:///var/run/crio/crio.sock
+    kubeadm init --apiserver-advertise-address=<replace_with_ip_of_the_vm> --pod-network-cidr=10.244.0.0/16 --cri-socket=unix:///var/run/crio/crio.sock
 
     	Obs! Replace API server IP address with the IP of the VM.
-    kubeadm init --apiserver-advertise-address=<replace_with_ip_of_the_vm> --pod-network-cidr=10.244.0.0/16 --cri-socket=unix:///var/run/crio/crio.sock
+    	ex: kubeadm init --apiserver-advertise-address=10.40.0.124 --pod-network-cidr=10.244.0.0/16 --cri-socket=unix:///var/run/crio/crio.sock
     
     6. After the installation completes run the commands returned after the deployment successful installation message.
 

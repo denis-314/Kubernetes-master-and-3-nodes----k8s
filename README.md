@@ -42,7 +42,7 @@ ________________________________________________________________________________
 
     2. Disable the swap memory on the master node
 
-    swapoff -a
+    sudo swapoff -a
 
     3. Assign Unique Hostname for Each Server Node
 

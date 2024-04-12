@@ -189,21 +189,19 @@ ________________________________________________________________________________
        kubectl get nodes
 
    Result example:
-   
-NAME          STATUS   ROLES           AGE   VERSION
-master-node   Ready    control-plane   76s   v1.28.1
+_master-node   Ready    control-plane   76s   v1.28.1_
 
  - First check if the taint is present or not with nodename:
 
        kubectl describe node master-node | grep Taints
 
    Result example:
-        _Taints:    node-role.kubernetes.io/control-plane:NoSchedule_
+_Taints:    node-role.kubernetes.io/control-plane:NoSchedule_
 
  - To remove taint from node:
 
        kubectl taint node master-node node-role.kubernetes.io/control-plane:NoSchedule-
 
    Result example:
-        _node/master-node untainted_
+_node/master-node untainted_
 _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________

@@ -174,10 +174,10 @@ IMPORTANT !
 
 In order to fix it, run the following commands, starting as kubernetes admin user:
 
-       sudo -i
-       swapoff -a
-       exit
-       strace -eopenat kubectl version
+    sudo -i
+    swapoff -a
+    exit
+    strace -eopenat kubectl version
 _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________  
 2. To check if the Kubernetes cluster is now available, run:
 

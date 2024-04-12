@@ -178,12 +178,12 @@ In order to fix it, run the following commands, starting as kubernetes admin use
        swapoff -a
        exit
        strace -eopenat kubectl version
-    
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________  
 2. To check if the Kubernetes cluster is now available, run:
 
        kubectl get nodes
-   
-4. If it is a one node deployment, you can remove the taint from the node in order to allow pods to be deployed on it.
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________   
+3. If it is a one node deployment, you can remove the taint from the node in order to allow pods to be deployed on it.
  - First check the taint present or not with nodename:
 
        kubectl describe node master-node | grep Taints
@@ -195,3 +195,4 @@ In order to fix it, run the following commands, starting as kubernetes admin use
        kubectl taint node master-node node-role.kubernetes.io/control-plane:NoSchedule-
 
    Result example:   node/master-node untainted
+_____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________

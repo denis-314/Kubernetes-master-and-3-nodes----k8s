@@ -191,7 +191,7 @@ ________________________________________________________________________________
    Result example:
 _master-node   Ready    control-plane   76s   v1.28.1_
 
- - First check if the taint is present or not with nodename:
+ - Check if the taint is present or not with nodename:
 
        kubectl describe node master-node | grep Taints
 

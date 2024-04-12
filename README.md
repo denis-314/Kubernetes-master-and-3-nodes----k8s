@@ -189,6 +189,7 @@ ________________________________________________________________________________
        kubectl get nodes
 
    Result example:
+   
 _master-node   Ready    control-plane   76s   v1.28.1_
 
  - Check if the taint is present or not with nodename:
@@ -196,6 +197,7 @@ _master-node   Ready    control-plane   76s   v1.28.1_
        kubectl describe node master-node | grep Taints
 
    Result example:
+   
 _Taints:    node-role.kubernetes.io/control-plane:NoSchedule_
 
  - Remove taint from node:
@@ -203,5 +205,6 @@ _Taints:    node-role.kubernetes.io/control-plane:NoSchedule_
        kubectl taint node master-node node-role.kubernetes.io/control-plane:NoSchedule-
 
    Result example:
+   
 _node/master-node untainted_
 _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________

@@ -184,15 +184,25 @@ ________________________________________________________________________________
        kubectl get nodes
 _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________   
 3. If it is a one-node cluster deployment, you can remove the taint from the node in order to allow pods to be deployed on it.
+ - Find the node name:
+
+       kubectl get nodes
+
+   Result example:
+        NAME          STATUS   ROLES           AGE   VERSION
+        master-node   Ready    control-plane   76s   v1.28.1
+
  - First check if the taint is present or not with nodename:
 
        kubectl describe node master-node | grep Taints
 
-   Result example:  Taints:    node-role.kubernetes.io/control-plane:NoSchedule
+   Result example:
+        _Taints:    node-role.kubernetes.io/control-plane:NoSchedule_
 
  - To remove taint from node:
 
        kubectl taint node master-node node-role.kubernetes.io/control-plane:NoSchedule-
 
-   Result example:   node/master-node untainted
+   Result example:
+        _node/master-node untainted_
 _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________

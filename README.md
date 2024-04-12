@@ -184,7 +184,7 @@ ________________________________________________________________________________
        kubectl get nodes
 _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________   
 3. If it is a one-node cluster deployment, you can remove the taint from the node in order to allow pods to be deployed on it.
- - First check the taint present or not with nodename:
+ - First check if the taint is present or not with nodename:
 
        kubectl describe node master-node | grep Taints
 

@@ -190,7 +190,7 @@ ________________________________________________________________________________
 
    Result example:
    
-_master-node   Ready    control-plane   76s   v1.28.1_
+	_master-node   Ready    control-plane   76s   v1.28.1_
 
  - Check if the taint is present or not with nodename:
 
@@ -198,7 +198,7 @@ _master-node   Ready    control-plane   76s   v1.28.1_
 
    Result example:
    
-_Taints:    node-role.kubernetes.io/control-plane:NoSchedule_
+	_Taints:    node-role.kubernetes.io/control-plane:NoSchedule_
 
  - Remove taint from node:
 
@@ -206,5 +206,5 @@ _Taints:    node-role.kubernetes.io/control-plane:NoSchedule_
 
    Result example:
    
-_node/master-node untainted_
+	_node/master-node untainted_
 _____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________

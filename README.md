@@ -198,7 +198,7 @@ _master-node   Ready    control-plane   76s   v1.28.1_
    Result example:
 _Taints:    node-role.kubernetes.io/control-plane:NoSchedule_
 
- - To remove taint from node:
+ - Remove taint from node:
 
        kubectl taint node master-node node-role.kubernetes.io/control-plane:NoSchedule-
 

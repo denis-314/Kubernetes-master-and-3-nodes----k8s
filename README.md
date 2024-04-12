@@ -170,13 +170,28 @@ ________________________________________________________________________________
 
 IMPORTANT !
 
-After a VM reboot, it is possible that Kubernetes cluster to be no longer available, reporting the following error: ”The connection to the server :6443 was refused - did you specify the right host or port?”
+1. After a VM reboot, it is possible that Kubernetes cluster to be no longer available, reporting the following error: ”The connection to the server :6443 was refused - did you specify the right host or port?”
 
 In order to fix it, run the following commands, starting as kubernetes admin user:
 
-    sudo -i
-    swapoff -a
-    exit
-    strace -eopenat kubectl version
+       sudo -i
+       swapoff -a
+       exit
+       strace -eopenat kubectl version
     
-To check if the Kubernetes cluster is now available, run "kubectl get nodes".
+2. To check if the Kubernetes cluster is now available, run:
+
+       kubectl get nodes
+   
+4. If it is a one node deployment, you can remove the taint from the node in order to allow pods to be deployed on it.
+ - First check the taint present or not with nodename:
+
+       kubectl describe node master-node | grep Taints
+
+   Result example:  Taints:    node-role.kubernetes.io/control-plane:NoSchedule
+
+ - To remove taint from node:
+
+       kubectl taint node master-node node-role.kubernetes.io/control-plane:NoSchedule-
+
+   Result example:   node/master-node untainted

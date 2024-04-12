@@ -189,8 +189,8 @@ ________________________________________________________________________________
        kubectl get nodes
 
    Result example:
-        NAME          STATUS   ROLES           AGE   VERSION
-        master-node   Ready    control-plane   76s   v1.28.1
+_        NAME          STATUS   ROLES           AGE   VERSION
+        master-node   Ready    control-plane   76s   v1.28.1_
 
  - First check if the taint is present or not with nodename:
 
